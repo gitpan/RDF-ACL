@@ -43,8 +43,8 @@ DESCRIPTION
     "$acl->new($input, %args)"
         Creates a new access control list based on RDF data defined in
         $input. $input can be a serialised string of RDF, a file name, a URI
-        or any other input accepted by the rdf_parse function (see
-        RDF::Trine::Shortcuts).
+        or any other input accepted by the "parse" function of
+        RDF::TrineX::Functions.
 
         "new()" can be called with no arguments to create a fresh, clean ACL
         containing no authorisations.
@@ -187,8 +187,8 @@ DESCRIPTION
     "$acl->save($format, $filename)"
         Serialises a local (not remote) ACL.
 
-        $format can be any format supported by rdf_string (see
-        RDF::Trine::Shortcuts).
+        $format can be any format supported by the "serialize" function from
+        RDF::TrineX::Functions.
 
         If $filename is provided, this method writes to the file and returns
         the new file size in bytes.
@@ -216,7 +216,7 @@ BUGS
     Please report any bugs to <http://rt.cpan.org/>.
 
 SEE ALSO
-    CGI::Auth::FOAF_SSL.
+    Web::ID.
 
     <http://www.w3.org/ns/auth/acl.n3>.
 
@@ -226,9 +226,14 @@ SEE ALSO
 AUTHOR
     Toby Inkster <tobyink@cpan.org>.
 
-COPYRIGHT
-    Copyright 2010-2011 Toby Inkster
+COPYRIGHT AND LICENCE
+    This software is copyright (c) 2010-2012 by Toby Inkster.
 
-    This library is free software; you can redistribute it and/or modify it
-    under the same terms as Perl itself.
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
+DISCLAIMER OF WARRANTIES
+    THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
+    WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
+    MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
