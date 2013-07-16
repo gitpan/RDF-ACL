@@ -1,0 +1,133 @@
+@prefix cpant: <http://purl.org/NET/cpan-uri/terms#> .
+@prefix dc:    <http://purl.org/dc/terms/> .
+@prefix dcs:   <http://ontologi.es/doap-changeset#> .
+@prefix dist:  <http://purl.org/NET/cpan-uri/dist/RDF-ACL/> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix nfo:   <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+dist:project
+	a                 doap:Project;
+	doap:name         "RDF-ACL";
+	cpant:perl_version_from _:B1;
+	cpant:readme_from _:B1;
+	cpant:requires    "Data::UUID";
+	cpant:requires    "Error";
+	cpant:requires    "RDF::Query";
+	cpant:requires    "RDF::Query::Client";
+	cpant:requires    "RDF::TrineX::Functions";
+	cpant:requires    "Scalar::Util";
+	cpant:requires    "URI";
+	cpant:test_requires "Test::More 0.61";
+	cpant:version_from _:B1;
+	doap:bug-database <http://rt.cpan.org/Dist/Display.html?Queue=RDF-ACL>;
+	doap:created      "2010-01-20"^^xsd:date;
+	doap:developer    <http://tobyinkster.co.uk/#i>;
+	doap:documenter   <http://tobyinkster.co.uk/#i>;
+	doap:download-page <https://metacpan.org/release/RDF-ACL>;
+	doap:homepage     <https://metacpan.org/release/RDF-ACL>;
+	doap:license      <http://dev.perl.org/licenses/>;
+	doap:maintainer   <http://tobyinkster.co.uk/#i>;
+	doap:programming-language "Perl";
+	doap:release      dist:v_0-01;
+	doap:release      dist:v_0-100;
+	doap:release      dist:v_0-101;
+	doap:release      dist:v_0-102;
+	doap:release      dist:v_0-103;
+	doap:repository   [
+		a doap:GitRepository;
+		doap:browse <https://github.com/tobyink/p5-rdf-acl>;
+	];
+	doap:shortdesc    "access control lists for the semantic web"@en;
+	doap:tester       <http://tobyinkster.co.uk/#i>.
+
+dist:v_0-01
+	a                 doap:Version;
+	dc:issued         "2010-01-20"^^xsd:date;
+	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/RDF-ACL-0.01.tar.gz>;
+	doap:revision     "0.01"^^xsd:string;
+	rdfs:comment      "Original version"@en.
+
+dist:v_0-100
+	a                 doap:Version;
+	dc:issued         "2010-06-20"^^xsd:date;
+	dcs:changeset     [
+		dcs:item [
+			a dcs:Update;
+			rdfs:label "Support recent addition to ACL vocabulary - acl:Append."@en;
+		];
+		dcs:item [ rdfs:label "use Scalar::Util."@en ];
+		dcs:versus dist:v_0-01;
+	];
+	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/RDF-ACL-0.100.tar.gz>;
+	doap:revision     "0.100"^^xsd:string.
+
+dist:v_0-101
+	a                 doap:Version;
+	rdfs:label        "We're not dead yet!"@en;
+	dc:issued         "2011-02-09"^^xsd:date;
+	dcs:changeset     [
+		dcs:item [
+			a dcs:Documentation;
+			a dcs:Update;
+			rdfs:label "Copyright 2011."@en;
+		];
+		dcs:item [ rdfs:label "Minor cleanups."@en ];
+		dcs:versus dist:v_0-100;
+	];
+	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/RDF-ACL-0.101.tar.gz>;
+	doap:revision     "0.101"^^xsd:string.
+
+dist:v_0-102
+	a                 doap:Version;
+	rdfs:label        "Still alive!"@en;
+	dc:issued         "2012-05-30"^^xsd:date;
+	dcs:changeset     [
+		dcs:item [
+			rdfs:label "Drop RDF::TrineShortcuts dependency; use RDF::TrineX::Functions."@en;
+		];
+		dcs:item [
+			a dcs:Documentation;
+			a dcs:Update;
+			rdfs:label "Copyright 2012."@en;
+		];
+		dcs:item [ rdfs:label "Cleanups."@en ];
+		dcs:item [
+			a dcs:Packaging;
+			rdfs:label "Module::Package::RDF."@en;
+		];
+		dcs:versus dist:v_0-101;
+	];
+	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/RDF-ACL-0.102.tar.gz>;
+	doap:revision     "0.102"^^xsd:string.
+
+dist:v_0-103
+	a                 doap:Version;
+	dc:issued         "2013-07-16"^^xsd:date;
+	dcs:changeset     [
+		dcs:item [
+			a dcs:Documentation;
+			a dcs:Update;
+			rdfs:label "Copyright 2013."@en;
+		];
+		dcs:item [
+			a dcs:Packaging;
+			rdfs:label "Stop bundling early paleolithic version of Scalar::Util."@en;
+			dcs:fixes <http://purl.org/NET/cpan-uri/rt/ticket/86723>;
+		];
+		dcs:versus dist:v_0-102;
+	];
+	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/RDF-ACL-0.103.tar.gz>;
+	doap:revision     "0.103"^^xsd:string.
+
+<http://tobyinkster.co.uk/#i>
+	a                 foaf:Person;
+	foaf:name         "Toby Inkster";
+	foaf:homepage     <http://tobyinkster.co.uk/>;
+	foaf:page         <https://metacpan.org/author/TOBYINK>.
+
+_:B1
+	nfo:fileName      "lib/RDF/ACL.pm".
+

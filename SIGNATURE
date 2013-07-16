@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.70.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,12 +14,15 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 533e7013901f2caa795d81e7593decc7464d99e6 Changes
-SHA1 cac0262d98552d4515d7ab5cbbb8718da03362c3 LICENSE
-SHA1 2ba8ec76c331f5954d52f1492c56d7537787a4c1 MANIFEST
-SHA1 2269ce3e4c18d357f24b3e389fd1c706b5f39447 META.yml
+SHA1 f06565fdd612a20e3fda65d165b615ff6213ef77 COPYRIGHT
+SHA1 d0ab15e82632519fa0ca3e0ee6315c9e6f52a61b CREDITS
+SHA1 44a70fe3a53ab4b9f47e5af84c16a2520d6d293a Changes
+SHA1 ec5a7b4f3023f03ebf821b57690758f7e6f3ae2a LICENSE
+SHA1 8c6294db53312632906117489fe6beb087c9a250 MANIFEST
+SHA1 26ba6699607816e5062481dcd2e26b8f655a9367 META.ttl
+SHA1 40ce5d24c0caf604bbcab8dddeb936bcd90f529f META.yml
 SHA1 80519f46cf4d005b59c73d680d3f90aef176d9bd Makefile.PL
-SHA1 cbb04e7361e0a514e90b9d18338ab74afb976437 README
+SHA1 19ac706a437dc394c67741082ae538667dfb8c97 README
 SHA1 c2ba1409f6fee356220d39958849a64eca14aeab TODO
 SHA1 06c410f05488c1612ed66b06d3a86b2580581e4a inc/Module/AutoInstall.pm
 SHA1 8a924add836b60fb23b25c8506d45945e02f42f4 inc/Module/Install.pm
@@ -32,18 +35,15 @@ SHA1 66d3d335a03492583a3be121a7d888f63f08412c inc/Module/Install/Include.pm
 SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
 SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
 SHA1 3b9281ddf7dd6d6f5de0a9642c69333023193c80 inc/Module/Install/Package.pm
-SHA1 b86d0385e10881db680d28bde94f275e49e34a27 inc/Module/Install/TrustMetaYml.pm
+SHA1 41f76ff6b39368a65da86377e43b34bacc2fb0eb inc/Module/Install/TrustMetaYml.pm
 SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
 SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
 SHA1 26d58a041cd6b3d21db98b32e8fd1841aae21204 inc/Module/Package.pm
-SHA1 6b807287940754cc31a3db59f2b22e363d5525be inc/Module/Package/Dist/RDF.pm
-SHA1 e31c281782183601e1e057c5914f63269e043932 inc/Scalar/Util.pm
-SHA1 5eae2f71c45a996a296d2445b18d0589307111f0 inc/Scalar/Util/PP.pm
+SHA1 5a2f84a7a82eee0d1e5ed3628fe503a608efc10f inc/Module/Package/Dist/RDF.pm
 SHA1 feb933cefe2e3762e8322bd6071a2499f3440da1 inc/YAML/Tiny.pm
-SHA1 8105c0510a773b56840995fb4dd2dc64fe9ddaee inc/unicore/Name.pm
-SHA1 c3e5f939bbdc1ac20668851cd4bc07053ea664c6 lib/RDF/ACL.pm
-SHA1 74586a69e2e03ba4db92e34324a8852dc850765f meta/changes.ttl
-SHA1 1eebbe69ae57b5c9bd50e5033e7dd55afd9bd833 meta/doap.ttl
+SHA1 4ab3ff80e10880056875b9c00bcb0aca3e56e7ff lib/RDF/ACL.pm
+SHA1 95cd30092db0f9b9bc7fe0504aead02fa2884b18 meta/changes.ttl
+SHA1 c3ac4640a7143f80763626e6b417dfd27f6bb037 meta/doap.ttl
 SHA1 ca2a9fc503d1f420c412c1642cdc8c69493e0d97 meta/makefile.ttl
 SHA1 119ae4abe44f33a3ced4d9989671786435f5dfa2 t/01basic.t
 SHA1 36a68e85e3a9ceae244f7eb9b7c1da689ad37371 t/02access.t
@@ -51,9 +51,9 @@ SHA1 56c8d36188bd42c196f0e7f5deee72ad8eab66ff t/03classes.t
 SHA1 b5dc3df3987d48cb725c83a8411e3b41931e84e0 t/04containers.t
 SHA1 3fcf8a4cd43f11feae065c53fef669e7f1bb04b8 t/05whoami.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.10 (GNU/Linux)
+Version: GnuPG v1.4.12 (GNU/Linux)
 
-iEYEARECAAYFAk/GRXEACgkQzr+BKGoqfTkC+ACgt8u3Bhqdf1leczQCqmqAQynB
-yXwAn1RUA3WfvVL8bdR1kVAtGuTRrk5K
-=xZk1
+iEYEARECAAYFAlHlTWYACgkQzr+BKGoqfTkJlgCgjJsAjbtwWlca7CxOMdsxbXjo
+/5kAnRJ0tj09VVgDayCequ7AiyixaK8j
+=xidt
 -----END PGP SIGNATURE-----

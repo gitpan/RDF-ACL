@@ -6,6 +6,13 @@ Home page:    <https://metacpan.org/release/RDF-ACL>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=RDF-ACL>
 Maintainer:   Toby Inkster
 
+0.103  2013-07-16
+
+ - (Bugfix Packaging) Stop bundling early paleolithic version of
+   Scalar::Util.
+   Fixes RT#86723
+ - (Documentation Update) Copyright 2013.
+
 0.102  2012-05-30  # Still alive!
 
  - (Documentation Update) Copyright 2012.
